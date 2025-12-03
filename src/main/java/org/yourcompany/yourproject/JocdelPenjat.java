@@ -73,7 +73,7 @@ public class Penjat {
     };
 
     static Scanner teclat = new Scanner(System.in);
-    
+
     public static String obtenirParaula() {
         Random random = new Random();
         return PARAULES[random.nextInt(PARAULES.length)];
@@ -154,9 +154,9 @@ public class Penjat {
             char lletra = demanarLletra();
 
             if (actualitzarEstat(estat, paraula, lletra)) {
-                System.out.println("Molt bé! La lletra '" + lletra + "' hi és!");
+                System.out.println("Super bé la lletra '" + lletra + "' hi és!");
             } else {
-                System.out.println("Llàstima! La lletra '" + lletra + "' NO hi és...");
+                System.out.println("Ostres La lletra '" + lletra + "' no hi és...");
                 errors++;
             }
 
@@ -164,9 +164,9 @@ public class Penjat {
         }
 
         if (paraulaCompletada(estat)) {
-            System.out.println(" Felicitats! Has encertat la paraula: " + paraula);
+            System.out.println("Has encertat la paraula: " + paraula);
         } else {
-            System.out.println(" Has perdut! La paraula era: " + paraula);
+            System.out.println(" Has perdut la paraula era: " + paraula);
             mostrarNinot(6);
         }
     }
